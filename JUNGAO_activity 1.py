@@ -3,9 +3,11 @@ class Person:
         self.name = name
         self.age = age
 
-    def display_info(self):
-        print(f"Name: {self.name}, Age: {self.age}")
+    def get_age(self):
+        return self.age
+person = ("lina", 20)
 
-person1 = Person("Megoy", 30)
-person1.display_info()
-        
+print(f"name: {person.name}")
+print(f"age: {person.get_age()}")
+
+#it is better because it allows you to create multiple instances of the Person class with different names and ages, and you can easily access their attributes and methods.
